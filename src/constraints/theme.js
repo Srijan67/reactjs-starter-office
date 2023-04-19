@@ -1,0 +1,32 @@
+export const customDark = {
+  colorPrimary: "#f28021",
+  colorPrimaryBg: "#f28021",
+  colorLink: "#f28021",
+  colorBgContainer: "#001529",
+  // colorBgBase: "#f3a662",
+  colorBgBase: "#33345e",
+  colorText: "#fff",
+  colorPrimaryTextActive: "#000",
+  colorTextBase: "#fff",
+  colorBgTextActive: "#000",
+  colorPrimaryText: "#fff",
+  colorLinkHover: "#f28021",
+  colorFillContentHover: "#f28021",
+  colorPrimaryBgHover: "#f28021",
+
+  colorLinkActive: "#000",
+};
+export const customDefault = {
+  colorPrimary: "#f28021",
+  colorPrimaryBg: "#f28021",
+  colorLink: "#f28021",
+  colorLinkHover: "#000",
+  colorPrimaryTextActive: "#000",
+  // colorLinkHover: "#f28021",
+  colorFillContentHover: "#f28021",
+  colorPrimaryBgHover: "#f28021",
+  colorLinkActive: "#000",
+  colorTextBase: "#000",
+  colorText: "#000",
+  // colorBgTextActive: "#fff",
+};

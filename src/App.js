@@ -1,25 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useEffect, useState } from "react";
+import Sidebar from "./components/sidebar";
 
-function App() {
+const App = () => {
+  const [checkLogin, setCheckLogin] = useState(false);
+  const checkLoginFunc = () => {
+    let data = localStorage.getItem("jaypee-token");
+    if (data) {
+      setCheckLogin(true);
+    }
+  };
+  useEffect(() => {
+    checkLoginFunc();
+  }, []);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Sidebar checkLogin={checkLogin} />
     </div>
   );
-}
+};
 
 export default App;
